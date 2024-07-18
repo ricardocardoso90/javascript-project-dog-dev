@@ -1,0 +1,46 @@
+.footer {
+  margin-top: 6rem;
+}
+
+.footer .container {
+  padding: 0 3rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+.footer nav p {
+  font-weight: bold;
+}
+
+.footer nav li {
+  margin: 1rem 0;
+}
+
+.footer nav a {
+  text-decoration: none;
+  color: var(--secondary);
+}
+
+.footer nav a:hover {
+  text-decoration: underline;
+}
+
+.footer .bar {
+  margin-top: 3rem;
+  padding: 1rem 3rem;
+  text-align: center;
+  background-color: var(--foreground);
+}
+
+@media (width > 600px) {
+  .footer .container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (width > 900px) {
+  .footer .container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
